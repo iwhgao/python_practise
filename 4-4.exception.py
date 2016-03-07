@@ -10,7 +10,6 @@
 
 __author__ = 'deangao'
 
-# TODO: try except finaly
 
 '''
 在设计程序时要考虑到可能发生的异常，并进行捕获，
