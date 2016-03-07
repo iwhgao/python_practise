@@ -122,3 +122,41 @@ lambda [parm1, parm2, ...]: expression
 
 a = lambda x: 'Element ' + x
 print a('hello world')
+
+# ---此处还有一些其它类似于函数编程的内置函数---
+'''
+apply、filter、map、reduce， 其中apply将被淘汰
+这些函数的调用方法都是接收一个函数名func和序列seq(比如有n个元素)，返回相应的元素
+比如：filter是将func（返回真假）应用于seq的每个元素，返回其中func返回值为真的元素， 返回元素个数<=n，即原序列的子集
+map是将func函数应用于seq的每个元素，返回func的返回值，返回元素个数为n
+reduce是将二元（两个参数）函数应用于seq的两个元素，得到的func返回值作为下一个参数值， 最终返回一个结果， 比如对序列求和
+'''
+
+
+# ---比如筛选序列中已'a'为开头的元素形成行的序列---
+# filter
+seq = ('abc', 'bv', '12', 'aa')
+find_with_a = lambda x: x.startswith('a')
+
+print filter(find_with_a, seq)
+# 输出 ('abc', 'aa')
+
+# ---给每个元素的开头添加A---
+# map
+add_a = lambda x: 'A' + x
+
+print map(add_a, seq)
+# 输出 ['Aabc', 'Abv', 'A12', 'Aaa']
+
+# ---连接序列的元素为最终的一个字符串---
+# reduce
+concat_str = lambda x, y: x + y
+print reduce(concat_str, seq)
+# 输出  abcbv12aa
+
+# ====================华丽的分割线====================
+'''
+从上面的介绍可以看出函数可以简化编程，提供代码复用率，
+而lambda方式可以仅用几行的代码就实现普通的循环做法，
+这就是python的强大之处之一，也是pythonic的一部分。
+'''
