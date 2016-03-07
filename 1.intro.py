@@ -44,6 +44,13 @@ Python Console是与python交互的地方，通常查看一个类或者其它资
 比如：
 help(sys)
 
+5. 其它教程
+http://www.runoob.com/python/python-tutorial.html
+http://www.pythontab.com/
+http://www.yiibai.com/python/
+http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000
+http://nbviewer.jupyter.org/github/lijin-THU/python-tutorial/tree/master/
+以及一些在线视频等。
 '''
 
 print __doc__
