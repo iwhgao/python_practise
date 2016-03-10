@@ -10,18 +10,18 @@
 
 __author__ = 'deangao'
 
-
 '''
 Python中同样是支持面向对象编程的（Object Oriented Programming）。
 '''
 
+
 # 定义一个人物类
 class People(object):
-
 	# 此处定义的类的属性
 	name = ''
 	sex = ''
 	age = 0
+	count = 0
 
 	def __init__(self, name, sex, age):
 		# 类似this指针
@@ -34,6 +34,7 @@ class People(object):
 		print 'Name is', name
 		print 'Sex is', sex
 		print 'Age is', age
+
 
 name = 'who'
 sex = 'm'
@@ -51,6 +52,11 @@ one_people.name = 'am'
 print one_people.name
 
 print People.name
+print People.count
+
+two_people = People(name, sex, age)
+print People.name
+print two_people.name
 
 # print People.obj_attr
 
