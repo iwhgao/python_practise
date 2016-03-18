@@ -53,4 +53,8 @@ http://nbviewer.jupyter.org/github/lijin-THU/python-tutorial/tree/master/
 以及一些在线视频等。
 '''
 
+# ======================华丽的分割线=================================
+"""
+这里没有介绍Python其它的一些模块，比如多线程编程、网络编程、GUI编程、web编程等
+"""
 print __doc__
