@@ -52,6 +52,7 @@ my_print3(2016)
 my_print3([1, 2, 3, 4])
 
 # ---example4 有参有缺省值函数---
+# 当参数有缺省和无缺省两种情况都在的情况下， 无缺省值的参数需要放在前面，否则会出错
 def my_print4(toprint='Hello'):
 	print 'TO print:', toprint
 
